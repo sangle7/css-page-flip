@@ -1,0 +1,59 @@
+.pic{
+    overflow: hidden;
+    clear:both;
+    margin: 20px auto;
+    width: 1280px;
+    height: auto;    
+}
+ul{
+    list-style: none;
+}
+
+.pic li {
+    position: relative;
+    width:370px;
+    height: 250px;
+    float: left;
+    background: white;
+    margin: 20px 10px;
+    border: 2px solid #efefef;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.27),0 0 60px rgba(0,0,0,0.1) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.27),0 0 60px rgba(0,0,0,0.1) inset;
+}
+
+img{
+    width:360px;
+    height: 240px;
+    display: block;
+    margin: 5px;
+}
+
+.pic li:before{
+    content: "";
+    position: absolute;
+    width:90%;
+    height: 80%;
+    left:20px;
+    bottom:8px;
+    z-index: -1;
+    background: transparent;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transform: skew(-12deg) rotate(-4deg);
+    -webkit-transform: skew(-12deg) rotate(-4deg);
+}
+
+.pic li:after{
+    content: "";
+    position: absolute;
+    width:90%;
+    height: 80%;
+    left:20px;
+    bottom:8px;
+    z-index: -1;
+    background: transparent;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transform: skew(12deg) rotate(4deg);
+    -webkit-transform: skew(12deg) rotate(4deg);
+}

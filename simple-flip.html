@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    div {
+        margin: 20px auto;
+        position: relative;
+        display: inline-block;
+        width: 12em;
+        background: linear-gradient(-150deg, transparent 1.5em, #6791B0 0);
+        padding: 2em;
+        color: white;
+        font: 100%/1.6 Baskerville, Palatino, serif;
+        border-radius: .5em;
+    }
+    
+    .flip-2 {
+        background: linear-gradient(-150deg, transparent 1.5em, #558b2f 0);
+    }
+    
+    .flip-3 {
+        background: linear-gradient(-150deg, transparent 1.5em, #FF8A80 0);
+    }
+    
+    div::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1.73em;
+        height: 3em;
+        background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, .2) 0, rgba(0, 0, 0, .4)) 100% 0 no-repeat;
+        transform: translateY(-1.3em) rotate(-30deg);
+        transform-origin: bottom right;
+        border-bottom-left-radius: .5em;
+        box-shadow: -.2em .2em .3em -.1em rgba(0, 0, 0, .15)
+    }
+    </style>
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+    <div class='flip-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+    <div class='flip-3'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+</body>
+
+</html>
